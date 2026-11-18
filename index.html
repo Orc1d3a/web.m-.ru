@@ -255,7 +255,7 @@
   qrImg.alt = "QR-код";
   qrImg.onload = () => { qrBox.appendChild(qrImg); };
   qrImg.onerror = () => {
-    qrBox.innerHTML = '<span class="qr-error">Не удалось загрузить QR-код по этой ссылке</span>';
+    qrBox.innerHTML = '<span class="qr-error">Не удалось загрузить QR-код <br> Перезагрузите страницу</span>';
   };
   qrImg.src = QR_IMAGE_URL;
 
